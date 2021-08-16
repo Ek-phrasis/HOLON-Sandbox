@@ -3,10 +3,10 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Weekly Team Sync
+name: Core Swarm Activities
 on:
   schedule:
-    - cron: 20 22 * * 1
+    - cron: 24 23 * * 1
 
 jobs:
   create_issue:
@@ -19,21 +19,20 @@ jobs:
         uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
         with:
           assignees: "stephen-rowan"
-          labels: "weekly sync, docs-team"
-          title: "Team sync"
+          labels: "Weekly Tasks"
+          title: "Core Swarm Activities"
           body: |
-            ### Agenda
+            ### Core Swarm Activities
 
-            - [ ] Start the recording
-            - [ ] Check-ins
-            - [ ] Discussion points
-            - [ ] Post the recording
+            - [ ] DominikTilman
+            - [ ] FelixWeber
+            - [ ] Filip
+            - [ ] Tevo 
                     
-            ### Discussion Points
-            Add things to discuss below
-
-            - [Work this week](https://github.com/Ek-phrasis/HOLON-Sandbox/projects/1)
+            ### Today's Activities
+            
+            - [Today's Activities](https://github.com/Catalyst-Swarm/Catalyst-Beehive/issues/143           )
           pinned: false
-          close-previous: false
+          close-previous: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
