@@ -6,7 +6,7 @@
 name: Core Swarm Activities
 on:
   schedule:
-    - cron: 24 23 * * 1
+    - cron: 10 00 * * 2
 
 jobs:
   create_issue:
@@ -22,7 +22,7 @@ jobs:
           labels: "Weekly Tasks"
           title: "Core Swarm Activities"
           body: |
-            ### Core Swarm Activities
+            ### Core Swarm Activities ${{ env.TODAY }}
 
             - [ ] DominikTilman
             - [ ] FelixWeber
