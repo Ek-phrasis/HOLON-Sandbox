@@ -42,13 +42,13 @@ jobs:
               - [ ] Seomon 
 
             ## Documentation
-              - [x] @stephen-rowan
+              - [x] stephen-rowan
 
                     
             ### Today's Activities
             
             
-            - [Today's Activities](https://github.com/Catalyst-Swarm/Catalyst-Beehive/issues/143           )
+            - Today's Activities           )
           pinned: false
           close-previous: true
         env:
