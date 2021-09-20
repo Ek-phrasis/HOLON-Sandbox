@@ -6,7 +6,7 @@
 name: Core Swarm Activities
 on:
   schedule:
-    - cron: 40 21 * * *
+    - cron: 50 21 * * *
 
 jobs:
   create_issue:
@@ -16,7 +16,7 @@ jobs:
       issues: write
     steps:
       - name: Today's date
-        run: echo "TODAY=$(date '+%Y-%B-%A')" >> $GITHUB_ENV
+        run: echo "TODAY=$(date '+ %dth %B, %Y')" >> $GITHUB_ENV
       - name: Create team sync issue
         uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
         with:
