@@ -21,7 +21,7 @@ jobs:
         with:
           assignees: "stephen-rowan"
           labels: "Weekly Tasks"
-          title: "Core Swarm Activities"
+          title: Core Swarm Activities ${{ env.TODAY }}
           body: |
             ### Core Swarm Activities ${{ env.TODAY }}
 
