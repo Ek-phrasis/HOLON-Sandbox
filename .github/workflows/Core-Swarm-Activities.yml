@@ -4,8 +4,9 @@
 # documentation.
 
 name: Core Swarm Activities
-on:
-  workflow_dispatch
+  schedule:
+    - cron: 50 21 * * *
+
 
 jobs:
   create_issue:
