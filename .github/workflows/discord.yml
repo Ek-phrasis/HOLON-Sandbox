@@ -10,8 +10,8 @@ jobs:
     - name: send custom message with args
       uses: appleboy/discord-action@master
       with:
-        webhook_id: ${{ 'https://discord.com/api/webhooks/889912205598945281/IqP1W1thraAsMgL8a4uiHecCr15NWo7pcNi7J4QAxSK6OVgparI2Q5jXFldHJgx8CGsY' }}
-        webhook_token: ${{ 'https://discord.com/api/webhooks/889912205598945281/IqP1W1thraAsMgL8a4uiHecCr15NWo7pcNi7J4QAxSK6OVgparI2Q5jXFldHJgx8CGsY' }}
+        webhook_id: ${{ '889912205598945281' }}
+        webhook_token: ${{ 'IqP1W1thraAsMgL8a4uiHecCr15NWo7pcNi7J4QAxSK6OVgparI2Q5jXFldHJgx8CGsY' }}
         args: The ${{ github.event_name }} event triggered first step.
         message: "Test Message"
 
