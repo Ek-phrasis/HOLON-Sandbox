@@ -11,7 +11,10 @@ jobs:
       uses: appleboy/discord-action@master
       with:
         webhook_id: ${{ '889912205598945281' }}
-        webhook_token: ${{ 'IqP1W1thraAsMgL8a4uiHecCr15NWo7pcNi7J4QAxSK6OVgparI2Q5jXFldHJgx8CGsY' }}   
+        webhook_token: ${{ 'IqP1W1thraAsMgL8a4uiHecCr15NWo7pcNi7J4QAxSK6OVgparI2Q5jXFldHJgx8CGsY' }}  
+        color: "#48f442"
+        username: "GitHub Bot"
+        message: "A new commit has been pushed with custom color."
 
 
 
