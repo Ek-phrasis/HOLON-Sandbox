@@ -10,8 +10,8 @@ jobs:
     - name: send message
       uses: appleboy/discord-action@master
       with:
-        webhook_id: ${{ secrets.WEBHOOK_ID }}
-        webhook_token: ${{ secrets.WEBHOOK_TOKEN }}   
+        webhook_id: ${{ 889912205598945281 }}
+        webhook_token: ${{ IqP1W1thraAsMgL8a4uiHecCr15NWo7pcNi7J4QAxSK6OVgparI2Q5jXFldHJgx8CGsY }}   
 
 
 
