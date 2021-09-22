@@ -5,9 +5,8 @@
 
 name: Core Swarm Activities2
   schedule:
-    - cron: 00 00 * * *
-
-
+    - cron: 30 12 * * *
+    
 jobs:
   create_issue:
     name: Create team sync issue
