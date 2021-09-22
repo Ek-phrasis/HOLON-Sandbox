@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Core Swarm Activities
+name: Core Swarm Activities2
   schedule:
     - cron: 00 00 * * *
 
