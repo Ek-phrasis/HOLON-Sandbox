@@ -1,12 +1,24 @@
-name: Core Swarm Activities
 on:
   workflow_dispatch
+
+name: Extract template fields
+
 jobs:
-- name: Create new issue
-  uses: imjohnbo/issue-bot@v3
-  with:
-    assignees: "octocat, monalisa"
-    title: Hello, world
-    body: |-
-      :wave: Hi, {{#each assignees}}@{{this}}{{#unless @last}}, {{/unless}}{{/each}}!
-    pinned: true
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    # Get the title, labels, assignees, and body of the issue template at the path,
+    # .github/ISSUE_TEMPLATE/my_template.md, if available.
+    - uses: imjohnbo/extract-issue-template-fields@v1
+      id: extract
+      with:
+        path: .github/ISSUE_TEMPLATE/my_template.md
+
+    # Log outputs of previous step
+    - run: |-
+        echo $ASSIGNEES $LABELS $TITLE $BODY
+      env:
+        ASSIGNEES: ${{ steps.extract.outputs.assignees }}
+        LABELS: ${{ steps.extract.outputs.labels }}
+        TITLE: ${{ steps.extract.outputs.title }}
+        BODY: ${{ steps.extract.outputs.body }}
