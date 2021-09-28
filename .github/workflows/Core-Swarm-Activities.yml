@@ -4,8 +4,9 @@
 # documentation.
 
 name: Core Swarm Activities2
+on:
   schedule:
-    - cron: 30 12 * * *
+    - cron: 40 10 * * *
     
 jobs:
   create_issue:
