@@ -52,5 +52,6 @@ jobs:
           pinned: false
           close-previous: true
           linked-comments: true
+          project: 2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
