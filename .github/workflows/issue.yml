@@ -49,9 +49,10 @@ jobs:
             
             
             - Today's Activities           )
-          pinned: false
+          pinned: true
           close-previous: true
           linked-comments: true
+          project-type: repository
           project: 2
           column: "In progress"
         env:
