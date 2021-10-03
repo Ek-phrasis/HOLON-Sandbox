@@ -51,9 +51,7 @@ jobs:
             - Today's Activities           )
           pinned: true
           close-previous: true
-          linked-comments: true
-          project-type: repository
-          project: 2
-          column: "In progress"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          linked-comments: true          
+                   
+        env:           
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
