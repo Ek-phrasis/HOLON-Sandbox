@@ -44,8 +44,8 @@ jobs:
             
             
             - Today's Activities           )
-          project: 2
-          column: In progress
+          # project: 2
+          # column: In progress
           pinned: false
           close-previous: true
         env:
