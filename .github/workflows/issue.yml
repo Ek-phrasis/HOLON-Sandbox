@@ -53,6 +53,6 @@ jobs:
           close-previous: true
           linked-comments: true
           project: 2
-          column: In progress
+          column: "In progress"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
