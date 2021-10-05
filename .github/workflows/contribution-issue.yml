@@ -40,17 +40,15 @@ jobs:
             - [ ] Days / Hours worked overall - [00 Days/Hours]
             - [ ] Cost of contribution (from member perspective) - [$ 0]
             - [ ] Contribution vote
-      - name: Test
-        with:
-          body: |
-              Development
+     
+            ## Development
 
-              Each work area will be divided into appropriate categories (e.g. Code, UX etc.) and be accompanied with an "Outputs" section where members can record what they have produced, built, documented etc.
+            Each work area will be divided into appropriate categories (e.g. Code, UX etc.) and be accompanied with an "Outputs" section where members can record what they have produced, built, documented etc.
 
-              Code
-              UX
-              Test
-              Support
+            - [ ] Code
+            - [ ] UX
+            - [ ] Test
+            - [ ]Support
 
           pinned: false
           close-previous: true
