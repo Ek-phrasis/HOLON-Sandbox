@@ -17,7 +17,7 @@ jobs:
       - name: Today's date
         run: echo "TODAY=$(date '+ %A, %d %B, %Y')" >> $GITHUB_ENV
       - name: Month
-        run: echo "MONTH=$(TZ=CST+24 date +%B)" >> $GITHUB_ENV
+        run: echo "MONTH=$(TZ=CST+24 date +%B, %Y)" >> $GITHUB_ENV
       - name: Create team sync issue
         uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
         with:
