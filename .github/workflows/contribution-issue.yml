@@ -27,9 +27,8 @@ jobs:
           body: |
             ###SecretDecks-ContributionSurvey - ${{ env.TODAY }}
             
-            * Previous Day - https://github.com/Ek-phrasis/Sandbox/issues/{{ previousIssueNumber }}
-            * Next Day - 
-            
+            * Previous Survey - https://github.com/Ek-phrasis/Sandbox/issues/{{ previousIssueNumber }}
+                    
             ## Autonomous Creator Organisation (ACO) - Contribution-Survey
 
             ## General Information
