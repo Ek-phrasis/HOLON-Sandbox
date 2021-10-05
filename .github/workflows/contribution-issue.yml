@@ -23,7 +23,7 @@ jobs:
         with:
           assignees: "stephen-rowan"
           labels: "Contribution Survey"
-          title: SecretDecks-ContributionSurvey - ${{ env.TODAY }}
+          title: SecretDecks-ContributionSurvey - ${{ env.MONTH }}
           body: |
             ###SecretDecks-ContributionSurvey - ${{ env.TODAY }}
             
