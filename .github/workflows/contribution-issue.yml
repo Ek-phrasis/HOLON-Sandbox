@@ -25,7 +25,7 @@ jobs:
           labels: "Contribution Survey"
           title: SecretDecks-ContributionSurvey - ${{ env.MONTH }}
           body: |
-            ###SecretDecks-ContributionSurvey - ${{ env.TODAY }}
+            SecretDecks-Contribution Survey - completed on - ${{ env.TODAY }}
             
             * Previous Survey - https://github.com/Ek-phrasis/Sandbox/issues/{{ previousIssueNumber }}
                     
