@@ -16,4 +16,4 @@ jobs:
         with:
           project: Business-Plan-Decomposition
           column: In Progress
-          repo-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          repo-token: ${{ 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 }}
