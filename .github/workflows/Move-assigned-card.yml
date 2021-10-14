@@ -16,4 +16,4 @@ jobs:
         with:
           project: Business-Plan-Decomposition
           column: In Progress
-          repo-token: ${{ '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' }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
