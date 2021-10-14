@@ -19,42 +19,30 @@ jobs:
       - name: Create team sync issue
         uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
         with:
-          assignees: "stephen-rowan"
+          assignees: ""
           labels: "Core Swarm Activities"
           title: Core Swarm Activities - ${{ env.TODAY }}
           body: |
             ### Core Swarm Activities - ${{ env.TODAY }}
-            
-            * Previous Day - https://github.com/Ek-phrasis/Sandbox/issues/{{ previousIssueNumber }}
-            * Next Day - 
-            
-            This Issue is intended as a daily record of Core Swarm Activities. It includes a checklist of who contributed to Core Swarm on this day and a "Today's Activities" section where links to this day's major events and tasks can be linked.
-
-            This approach is still a work in progress and is intended as a prototype for tracking Core Swarm
-
-
-            ## Today's Contributors ?
-              Checked Names confirmed as contributors.
-
-              - [ ] DominikTilman
-              - [ ] FelixWeber
-              - [ ] Filip
-              - [ ] JakobD
-              - [ ] Tevo 
-              - [ ] Victor Corcino
-              - [ ] Seomon 
-
-            ## Documentation
-              - [x] stephen-rowan
-
-                    
-            ### Today's Activities
-            
-            
-            - Today's Activities           )
+                       
+            This Issue is intended as a daily record of Core Swarm Activities. 
+             
           pinned: true
           close-previous: true
           linked-comments: true          
                    
         env:           
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            
+      - name: Build
+        runs-on: ubuntu-latest
+          steps:
+            - uses: actions/checkout@master
+            - name: send message
+            uses: appleboy/discord-action@master
+            with:
+              webhook_id: ${{ '889912205598945281' }}
+              webhook_token: ${{ 'IqP1W1thraAsMgL8a4uiHecCr15NWo7pcNi7J4QAxSK6OVgparI2Q5jXFldHJgx8CGsY' }}  
+              color: "#48f442"
+           username: "QA DAO"
+            message:    "https://github.com/Catalyst-Swarm/Catalyst-Beehive/issues/{{ previousIssueNumber }}"
