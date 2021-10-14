@@ -33,16 +33,18 @@ jobs:
                    
         env:           
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            
-      - name: Build
-        runs-on: ubuntu-latest
-          steps:
-            - uses: actions/checkout@master
-            - name: send message
-            uses: appleboy/discord-action@master
-            with:
-              webhook_id: ${{ '889912205598945281' }}
-              webhook_token: ${{ 'IqP1W1thraAsMgL8a4uiHecCr15NWo7pcNi7J4QAxSK6OVgparI2Q5jXFldHJgx8CGsY' }}  
-              color: "#48f442"
-           username: "QA DAO"
-            message:    "https://github.com/Catalyst-Swarm/Catalyst-Beehive/issues/{{ previousIssueNumber }}"
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: send message
+      uses: appleboy/discord-action@master
+      with:
+        webhook_id: ${{ '889912205598945281' }}
+        webhook_token: ${{ 'IqP1W1thraAsMgL8a4uiHecCr15NWo7pcNi7J4QAxSK6OVgparI2Q5jXFldHJgx8CGsY' }}  
+        color: "#48f442"
+        username: "QA DAO"
+        message: "https://github.com/Catalyst-Swarm/Catalyst-Beehive/issues/{{ previousIssueNumber }}" 
+           
+          
