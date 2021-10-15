@@ -45,6 +45,6 @@ jobs:
         webhook_token: ${{ 'IqP1W1thraAsMgL8a4uiHecCr15NWo7pcNi7J4QAxSK6OVgparI2Q5jXFldHJgx8CGsY' }}  
         color: "#48f442"
         username: "QA DAO"
-        message: The ${{ github.event_name }} event triggered first step.
+        message: The ${{ previousIssueNumber }} event triggered first step.
 
           
