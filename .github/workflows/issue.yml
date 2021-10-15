@@ -37,6 +37,8 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+    - name: Today's date
+      run: echo "TODAY=$(date '+ %A, %dth %B, %Y')" >> $GITHUB_ENV
     - uses: actions/checkout@master
     - name: send message
       uses: appleboy/discord-action@master
