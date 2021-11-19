@@ -22,30 +22,20 @@ jobs:
         with:
           assignees: ""
           labels: "Weekly Tasks"
-          title: Core Swarm Activities - ${{ env.TODAY }}
+          title: Weekly Swarm Activities - ${{ env.TODAY }}
           body: |
-            ### Core Swarm Activities - ${{ env.TODAY }}
+            ### Weekly Swarm Activities - ${{ env.TODAY }}
             
             https://github.com/Catalyst-Swarm/Catalyst-Beehive/issues/{{ previousIssueNumber }}
             ## previousIssueNumber
-            This Issue is intended as a daily record of Core Swarm Activities. It includes a checklist of who contributed to Core Swarm on this day and a "Today's Activities" section where links to this day's major events and tasks can be linked.
-            This approach is still a work in progress and is intended as a prototype for tracking Core Swarm
-            ## Today's Contributors ?
-              Checked Names confirmed as contributors.
-              - [ ] DominikTilman
+            This Issue is intended as a weekly record of Swarm Activities. 
               - [ ] FelixWeber
-              - [ ] Filip
-              - [ ] JakobD
-              - [ ] Tevo 
-              - [ ] Victor Corcino
-              - [ ] Seomon 
-            ## Documentation
               - [x] stephen-rowan
                     
             ### Today's Activities
             
             
-            - Today's Activities           )
+            -  ${{ env.TODAY }}         )
           # project: 2
           # column: In progress
           # pinned: false
