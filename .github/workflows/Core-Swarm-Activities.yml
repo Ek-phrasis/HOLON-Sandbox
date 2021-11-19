@@ -25,17 +25,16 @@ jobs:
           title: Weekly Swarm Activities - ${{ env.TODAY }}
           body: |
             ### Weekly Swarm Activities - ${{ env.TODAY }}
-            
-            https://github.com/Catalyst-Swarm/Catalyst-Beehive/issues/{{ previousIssueNumber }}
-            ## previousIssueNumber
+            #### Last Weeks Activities - https://github.com/Catalyst-Swarm/Catalyst-Beehive/issues/{{ previousIssueNumber }}
             This Issue is intended as a weekly record of Swarm Activities. 
               - [ ] FelixWeber
               - [x] stephen-rowan
                     
-            ### Today's Activities
+            ### Sunday -  ${{ env.TODAY }}
             
+            ### Monday -  ${{ env.TODAY }}
             
-            -  ${{ env.TODAY }}         )
+                  )
           # project: 2
           # column: In progress
           # pinned: false
