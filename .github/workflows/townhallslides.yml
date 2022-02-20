@@ -19,7 +19,7 @@ jobs:
       - name: Today's date
         run: echo "TODAY=$(date -d '7 days' '+ %A, %dth %B, %Y')" >> $GITHUB_ENV
       - name: Create issue
-        uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
+        uses: imjohnbo/issue-bot@v3
         with:
           assignees: "Andre-Diamond"
           labels: "slides"
