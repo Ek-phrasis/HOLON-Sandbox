@@ -21,6 +21,7 @@ jobs:
       - name: Create issue
         uses: imjohnbo/issue-bot@v3
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           assignees: "Andre-Diamond"
           labels: "slides"
           title: Town Hall Slides - ${{ env.TODAY }}
@@ -31,7 +32,8 @@ jobs:
             * CC Admin meeting - 
             
             - [ ] Prepare Town Hall slides for Wednesday
-
+            
+          project-type: organization
           project: 2  # The project-number from organization project https://github.com/orgs/org/projects/project-number
           column: In progress
           pinned: false
