@@ -11,7 +11,7 @@ on :
     
 jobs:
   create_issue:
-    name: Create Townhall slides issue
+    name: Create Town Hall slides
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -30,7 +30,7 @@ jobs:
             * Previous Town Hall - https://github.com//Ek-phrasis/Sandbox/issues/{{ previousIssueNumber }}
             * CC Admin meeting - 
             
-            - [] Prepare Townhall slides
+            - [ ] Prepare Town Hall slides for Wednesday
 
           pinned: false
           close-previous: true
