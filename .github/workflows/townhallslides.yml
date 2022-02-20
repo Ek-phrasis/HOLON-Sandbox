@@ -33,7 +33,6 @@ jobs:
             
             - [ ] Prepare Town Hall slides for Wednesday
             
-          project-type: organization
           project: 2  # The project-number from organization project https://github.com/orgs/org/projects/project-number
           column: In progress
           pinned: false
