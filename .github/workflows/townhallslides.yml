@@ -1,0 +1,40 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Townhall-slides
+on :
+  workflow_dispatch:
+  #schedule:
+  #  - cron: 0 0 * * 3
+    
+jobs:
+  create_issue:
+    name: Create team sync issue
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Today's date
+        run: echo "TODAY=$(date '+ %A, %dth %B, %Y')" >> $GITHUB_ENV
+      - name: Create issue
+        uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
+        with:
+          assignees: "Glaxas"
+          labels: "slides"
+          title: Town Hall Slides - ${{ env.TODAY }}
+          body: |
+            ### Townhall slides - ${{ env.TODAY }}
+            
+            * Previous Town Hall - https://github.com//Ek-phrasis/Sandbox/issues/{{ previousIssueNumber }}
+            * Next Day - 
+            
+            - [x] Prepare Townhall slides
+            - [x] Town Hall Topics ?
+
+          pinned: false
+          close-previous: true
+          linked-comments: true 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
