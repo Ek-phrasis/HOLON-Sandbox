@@ -28,10 +28,9 @@ jobs:
             ### Townhall slides - ${{ env.TODAY }}
             
             * Previous Town Hall - https://github.com//Ek-phrasis/Sandbox/issues/{{ previousIssueNumber }}
-            * Next Day - 
+            * CC Admin meeting - 
             
-            - [x] Prepare Townhall slides
-            - [x] Town Hall Topics ?
+            - [] Prepare Townhall slides
 
           pinned: false
           close-previous: true
