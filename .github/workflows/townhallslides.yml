@@ -21,7 +21,7 @@ jobs:
       - name: Create issue
         uses: imjohnbo/issue-bot@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: $GITHUB_TOKEN
           assignees: "Andre-Diamond"
           labels: "slides"
           title: Town Hall Slides - ${{ env.TODAY }}
